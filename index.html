@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes raices</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header class="site-header inicio"> <!-- Solo puede haber un id="site-header" por pagina, las clases se pueden reutilizar-->
         
-        <div class="contenedor">
+        <div class="contenedor contenido-header">
 
             <div class="barra">
 
@@ -32,60 +34,71 @@
 
     </header>
 
-    <section> <!-- Si el primero hijo es un "h" puede ser un section -->
+    <section class="contenedor seccion"> <!-- Si el primero hijo es un "h" puede ser un section -->
     
-        <h2>Más sobre nosotros</h2>
+        <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
     
-            <div>
-                <img src="Archivos/Archivos Bienes Raices/img/icono1.svg" alt="Icono de seguridad">
-                <h3 class="encabezado">Seguridad</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iste sequi blanditiis, saepe placeat eveniet, velit excepturi tempora tenetur autem rem aperiam ad quasi aspernatur est consectetur quaerat nisi quis.</p>
-            </div>
+            <div class="iconos-nosotros">
+                <div class="icono">
+                    <img src="Archivos/Archivos Bienes Raices/img/icono1.svg" alt="Icono de seguridad">
+                    <h3 class="encabezado">Seguridad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iste sequi blanditiis, saepe placeat eveniet, velit excepturi tempora tenetur autem rem aperiam ad quasi aspernatur est consectetur quaerat nisi quis.</p>
+                </div>
 
-            <div>
-                <img src="Archivos/Archivos Bienes Raices/img/icono2.svg" alt="Icono de mejor precio">
-                <h3>Mejor precio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae similique, saepe quod corrupti amet sint illum non placeat debitis reiciendis aperiam necessitatibus nisi quidem sit quos, magnam a, totam veniam!</p>
-            </div>
-
-            <div>
-                <img src="Archivos/Archivos Bienes Raices/img/icono3.svg" alt="Icono de a tiempo">
-                <h3>A tiempo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sapiente eum corrupti sed magni voluptas. Laboriosam fuga expedita suscipit, quam voluptatum deleniti perferendis eaque necessitatibus minus laborum ipsum ratione. Optio!</p>
-            </div>
-
+                <div class="icono">
+                    <img src="Archivos/Archivos Bienes Raices/img/icono2.svg" alt="Icono de mejor precio">
+                    <h3>Mejor precio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae similique, saepe quod corrupti amet sint illum non placeat debitis reiciendis aperiam necessitatibus nisi quidem sit quos, magnam a, totam veniam!</p>
+                </div>
+            
+                <div class="icono">
+                    <img src="Archivos/Archivos Bienes Raices/img/icono3.svg" alt="Icono de a tiempo">
+                    <h3>A tiempo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sapiente eum corrupti sed magni voluptas. Laboriosam fuga expedita suscipit, quam voluptatum deleniti perferendis eaque necessitatibus minus laborum ipsum ratione. Optio!</p>
+                </div>
+            </div>        
     </section>
 
-    <main> <!-- Contenido principal-->
+    <main class="seccion contenedor"> <!-- Contenido principal-->
 
-        <h2>Casas y departamentos en venta</h2>
+        <h2 class="fw-300 centrar-texto">Casas y departamentos en venta</h2>
+
+        <div class="contenedor-anuncios">
     
-            <div>
+            <div class="anuncio">
                 <img src="Archivos/Archivos Bienes Raices/img/anuncio1.jpg" alt="Imagen de casa en el lago">
-                <h3>Casa de lujo en el lago</h3>
-                <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                <p>3.000.000$</p>
-                <a href="">Ver propiedad</a>
+                <div class="contenido-anuncio">
+                    <h3>Casa de lujo en el lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
+                    <p class="precio">3.000.000$</p>
+                    <a href="#" class="boton boton-amarillo">Ver propiedad</a>
+                </div>
             </div>
 
-            <div>
+            <div class="anuncio">
                 <img src="Archivos/Archivos Bienes Raices/img/anuncio2.jpg" alt="Imagen de casa terminados de lujo">
-                <h3>Casa terminados de lujo</h3>
-                <p>Casa con diseño moderno, tecnologia inteligente y amueblada</p>
-                <p>2.000.000$</p>
-                <a href="">Ver propiedad</a>
+                <div class="contenido-anuncio">
+                    <h3>Casa terminados de lujo</h3>
+                    <p>Casa con diseño moderno, tecnologia inteligente y amueblada</p>
+                    <p class="precio">2.000.000$</p>
+                    <a href="#" class="boton boton-amarillo">Ver propiedad</a>
+                </div>
             </div>
 
-            <div>
+            <div class="anuncio">
                 <img src="Archivos/Archivos Bienes Raices/img/anuncio3.jpg" alt="Imagen de casa con alberca">
-                <h3>Casa con alberca</h3>
-                <p>Casa con alberca y acaba de lujos, en la ciudad. Excelente oportunidad</p>
-                <p>3.000.000$</p>
-                <a href="">Ver propiedad</a>
-            <div>
+                <div class="contenido-anuncio">
+                    <h3>Casa con alberca</h3>
+                    <p>Casa con alberca y acaba de lujos, en la ciudad. Excelente oportunidad</p>
+                    <p class="precio">3.000.000$</p>
+                    <a href="#" class="boton boton-amarillo">Ver propiedad</a>
+                </div>
+            </div>
 
-            <a href="Anuncios.html">Ver todas</a>
-    
+        </div>
+
+    <a href="Anuncios.html" class="boton boton-verde">Ver todas</a>
+            
     </main>
 
     <section>
