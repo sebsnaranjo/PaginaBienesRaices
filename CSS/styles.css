@@ -262,3 +262,49 @@ h4{
     color: #e08709;
 }
 
+/* Testimonilaes */
+
+.testimonial {
+    background-color: #71B100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+
+.testimonial p {
+    text-align: right;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../Archivos/Archivos\ Bienes\ Raices/img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: white;
+}
