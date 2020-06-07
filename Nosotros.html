@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Bienes raices</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Nostros</h1>
-    <a href="index.html">Inicio</a>
+
+    <header class="site-header"> <!-- Solo puede haber un id="site-header" por pagina, las clases se pueden reutilizar-->
+        
+        <div class="contenedor contenido-header">
+
+            <div class="barra">
+
+                <a href="/">
+                    <img src="Archivos/Archivos Bienes Raices/img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+    
+                <nav class="navegacion">
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Anuncios.html">Anuncios</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="Contactanos.html">Contactanos</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="contenedor">
+        <h1 class="fw-300 centrar-texto">Conoce sobre nosotros</h1>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="Archivos/Archivos Bienes Raices/img/nosotros.jpg" alt="imagen sobre nostros">
+            </div>
+
+            <div class="texto-nosotros">
+                <blockquote>25 años de experiencia</blockquote>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet tortor condimentum nisi iaculis imperdiet. Nulla pharetra semper nulla vitae faucibus. Donec sit amet augue quis magna sollicitudin mollis. Aenean ornare porta leo nec facilisis. Vestibulum vulputate in eros a accumsan. Ut at cursus sem, eget tincidunt justo. Ut eget purus hendrerit, aliquet massa et, venenatis lectus. Nulla facilisi. Vivamus tincidunt pulvinar interdum.
+                Maecenas sed fermentum velit. Pellentesque hendrerit, enim sit amet dapibus rhoncus, nunc tortor volutpat enim, ut varius nibh dolor eget purus. Cras sollicitudin, lectus eget aliquam venenatis, nisl lectus condimentum neque, sed ullamcorper erat lectus nec magna. </p>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="contenedor seccion"> <!-- Si el primero hijo es un "h" puede ser un section -->
+    
+        <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
+    
+            <div class="iconos-nosotros">
+                <div class="icono">
+                    <img src="Archivos/Archivos Bienes Raices/img/icono1.svg" alt="Icono de seguridad">
+                    <h3 class="encabezado">Seguridad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iste sequi blanditiis, saepe placeat eveniet, velit excepturi tempora tenetur autem rem aperiam ad quasi aspernatur est consectetur quaerat nisi quis.</p>
+                </div>
+
+                <div class="icono">
+                    <img src="Archivos/Archivos Bienes Raices/img/icono2.svg" alt="Icono de mejor precio">
+                    <h3>Mejor precio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae similique, saepe quod corrupti amet sint illum non placeat debitis reiciendis aperiam necessitatibus nisi quidem sit quos, magnam a, totam veniam!</p>
+                </div>
+            
+                <div class="icono">
+                    <img src="Archivos/Archivos Bienes Raices/img/icono3.svg" alt="Icono de a tiempo">
+                    <h3>A tiempo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sapiente eum corrupti sed magni voluptas. Laboriosam fuga expedita suscipit, quam voluptatum deleniti perferendis eaque necessitatibus minus laborum ipsum ratione. Optio!</p>
+                </div>
+            </div>        
+    </section>
+    
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Anuncios.html">Anuncios</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Contactanos.html">Contactanos</a>
+            </nav>
+            <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+        </div>
+    </footer>
 </body>
 </html>
