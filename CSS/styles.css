@@ -397,12 +397,16 @@ h4{
 }
 
 /* Paginas internas */
+/* Nosotros */
 
-.contenido-nosotros{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+@media (min-width: 768px) {
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }    
 }
+
 
 .texto-nosotros blockquote {
     font-weight: 900;
